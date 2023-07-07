@@ -1,11 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { NxWelcomeComponent } from './nx-welcome.component';
+import { CommonUiModule } from '../../../../libs/common-ui/src/index';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [],
+      imports: [CommonUiModule],
       declarations: [AppComponent, NxWelcomeComponent],
     }).compileComponents();
   });
